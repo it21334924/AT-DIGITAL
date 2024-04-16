@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT DIGITAL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="White Logo.png" alt="Logo"> <!-- Insert the logo -->
+        <!-- Hamburger menu icon -->
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"></div>
+        </div>
+        <!-- Navigation menu -->
+        <nav>
+            <a href="#">SERVICES</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">CAREERS</a>
+        </nav>
+    </header>
+
+    <div class="image">
+        <img src="3.png" alt="Image 3"> <!-- Add the new image -->
+    </div> <!-- Image div -->
+
+    <div class="custom-text">
+        Web & Mobile App Development
+    </div>
+
+    <div class="second-text">
+        Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online.
+        <button class="new-button">LEARN MORE</button> <!-- New button -->
+    </div>
+
+    <!-- Box with Text and Button -->
+    <div class="box">
+        <div class="box-text">
+            We Crush Your Competitors Goals, And Sales Records - Without The B.S.
+        </div>
+        <button class="button">GET FREE CONSULTATION</button>
+    </div>
+
+    <!-- New Image -->
+    <div class="new-image">
+        <img src="4.png" alt="Image 4">
+    </div>
+
+    <!-- New Text 1 -->
+    <div class="new-text">
+        Digital Strategy Consulting
+    </div>
+
+    <!-- New Text 2 -->
+    <div class="new-text2">
+        Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each component will never work in isolation and every business needs a different mix. We provide a clear concept and strategic overview to find the most efficient model for your business.
+    </div>
+
+    <!-- New Button -->
+    <div class="new-button2">
+        <button class="new-button">LEARN MORE</button>
+    </div>
+
+    <!-- New Text 3 -->
+    <div class="new-text3">
+        Frequently asked questions
+    </div>
+
+    <!-- Collapsible Section -->
+    <div class="collapsible" id="collapsibleSection">
+        <div class="collapsible-header" onclick="toggleCollapsible('collapsibleSection')">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</div>
+        <div class="collapsible-content">
+            Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+        </div>
+    </div>
+
+    <!-- Second Collapsible Section -->
+    <div class="collapsible" id="collapsibleSection2">
+        <div class="collapsible-header" onclick="toggleCollapsible('collapsibleSection2')">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</div>
+        <div class="collapsible-content">
+            Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+        </div>
+    </div>
+
+    <!-- Third Collapsible Section -->
+    <div class="collapsible" id="collapsibleSection3">
+        <div class="collapsible-header" onclick="toggleCollapsible('collapsibleSection3')">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</div>
+        <div class="collapsible-content">
+            Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="White Logo.png" alt="Logo" style="position: absolute; top: 40px; left: 80px;">
+        <!-- New Text 4 -->
+        <div class="new-text4">
+            Your goal is our target. Not anything in between. We use online marketing platforms and tools to achieve single objective - your business results.
+        </div>
+        <div class="new-text5">
+            Our Technologies
+        </div>
+        <div class="new-text6">
+            Our Services
+        </div>
+        <div class="new-text7">
+            ReactJS<br><br>Gatsby<br><br>NextJS<br><br>NodeJS
+        </div>
+        <div class="new-text8">
+            Social Media Marketing<br><br>Web & Mobile App Development<br><br>Data & Analytics
+        </div>
+        <div class="white-line"></div>
+        <div class="new-text9">Privacy Policy | Terms & Conditions</div>
+    </footer>
+
+    <!-- White panel for hamburger menu -->
+    <div class="white-panel">
+        <a href="#">HOME</a>
+        <a href="#">SERVICES</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">CONTACT US</a>
+        <a href="#">CAREERS</a>
+    </div>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            this.classList.toggle('open');
+            document.querySelector('.white-panel').classList.toggle('open');
+        });
+
+        function toggleCollapsible(sectionId) {
+            var section = document.getElementById(sectionId);
+            var content = section.querySelector('.collapsible-content');
+            content.classList.toggle('collapsed');
+        }
+    </script>
+</body>
+</html>

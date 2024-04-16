@@ -1,0 +1,552 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    max-width: 1440px; /* Restrict body width to 1440px */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Header styles */
+header {
+    background-color: #6B3CC9; /* Changed color to #6B3CC9 */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px; /* Adjusted padding: top 30px, right 20px, bottom 0 */
+    position: relative; /* Add position relative for absolute positioning of logo */
+}
+
+header img {
+    position: absolute; /* Position the logo absolutely */
+    top: 15px; /* Move the logo slightly higher */
+    left: 80px; /* Adjusted left to 80px to have a distance of 80px from the left border */
+    height: 30px; /* Set the height of the logo */
+}
+
+/* Navigation bar styles */
+nav {
+    position: absolute; /* Position the navigation bar */
+    top: 20px; /* Align the navigation bar to the top of the header */
+    right: 30px; /* Move the navigation bar slightly to the right */
+    display: flex; /* Make the navigation items align horizontally */
+    font-family: Inter, sans-serif; /* Set font to Inter */
+    font-size: 14px; /* Set font size to 14px */
+    font-weight: 500; /* Set font weight to 500 */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 28px; /* Set the gap between navigation items */
+}
+
+/* Image styles */
+.image {
+    width: 100%;
+    height: 700px; /* Adjusted height to 700px */
+    background-image: url('2.png');
+    background-size: cover;
+    position: relative;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Add styles for the new image */
+.image img {
+    position: absolute;
+    top: 820px;
+    left: 188px;
+    width: 414px;
+    height: 414px;
+}
+
+/* Box styles */
+.box {
+    width: 630px;
+    height: 316px; 
+    background: linear-gradient(to right, #4DCA79, #1CBDDD); /* Horizontal gradient with switched colors */
+    color: #FFFFFF;
+    padding: 24px 40px 32px 40px; /* Adjusted padding */
+    position: absolute;
+    top: 394px;
+    left: 80px;
+}
+
+.box-text {
+    font-family: Inter, sans-serif;
+    font-size: 47px; /* Decreased font size by 1px */
+    font-weight: 700;
+    width: 556px;
+    height: 192px;
+    margin-bottom: 20px; /* Add some space between text and button */
+    line-height: 60px; /* Set line height to accommodate multiple lines */
+    position: absolute; /* Position the text */
+    top: 24px; /* Adjusted top position relative to the box */
+    left: 40px; /* Adjusted left position relative to the box */
+}
+
+.button {
+    background-color: #F28D35;
+    color: #FFFFFF;
+    width: 214px;
+    height: 35px;
+    border-radius: 4px;
+    padding: 20px; /* Adjusted padding */
+    text-align: center;
+    cursor: pointer;
+    font-family: Inter, sans-serif; /* Set font to Inter */
+    font-weight: 700; /* Set font weight to 700 */
+    font-size: 14px; /* Set font size to 14px */
+    letter-spacing: -2%; /* Set letter spacing to -2% */
+    border: none; /* Remove border */
+    position: absolute; /* Position the button */
+    top: 266px; /* Adjusted top position (5px down) */
+    left: 40px; /* Adjusted left position */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Text styles */
+.custom-text {
+    position: absolute;
+    top: 1003.5px;
+    left: 710px;
+    width: 507px;
+    height: 33px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.4px;
+    color: #6B3CC9;
+}
+
+.second-text {
+    position: absolute;
+    top: 1056.5px;
+    left: 710px;
+    width: 542px;
+    height: 76px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    letter-spacing: 0.4px;
+    color: #000000;
+}
+
+.new-button {
+    background-color: #F28D35;
+    Position:absolute;
+    color: #FFFFFF;
+    width: 129px; /* Adjusted width */
+    height: 38px; /* Adjusted height */
+    border-radius: 4px;
+    padding: 12px 20px; /* Adjusted padding */
+    text-align: center;
+    cursor: pointer;
+    font-family: Inter, sans-serif; /* Set font to Inter */
+    font-weight: 700; /* Set font weight to 700 */
+    font-size: 14px; /* Set font size to 14px */
+    letter-spacing: -2%; /* Set letter spacing to -2% */
+    border: none; /* Remove border */
+    top: 90px; /* Adjusted top position */
+    /*left: 710px; /* Adjusted left position */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    white-space: nowrap; /* Prevent wrapping */
+    margin-top: 8px; /* Gap */
+    z-index: 999; /* Ensure the button appears above other elements */
+    font-family: Inter, sans-serif; /* Set font to Inter */
+    font-weight: 700; /* Set font weight to 700 */
+    font-size: 14px; /* Set font size to 14px */
+    line-height: 14px; /* Set line height to 14px */
+    letter-spacing: -2%; /* Set letter spacing to -2% */
+    color: #FFFFFF; /* Set text color to white */
+}
+
+
+
+.new-image {
+    position: absolute;
+    top: 1371px;
+    left: 838px;
+    width: 414px;
+    height: 414px;
+}
+
+.new-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.new-text {
+    position: absolute;
+    top: 1466px;
+    left: 188px;
+    width: 507px;
+    height: 33px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: 0.4px;
+    color: #6B3CC9;
+}
+
+
+.new-text2 {
+    position: absolute;
+    top: 1519px;
+    left: 188px;
+    width: 542px;
+    height: 95px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #000000;
+}
+
+
+.new-button2 {
+    position: absolute;
+    top: 1520px;
+    left: 188px;
+}
+
+.new-button2 .new-button {
+    width: 129px;
+    height: 38px;
+    border-radius: 4px;
+    padding: 12px 20px;
+    background-color: #F28D35;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -2%;
+    border: none;
+}
+
+/* New Text 3 styles */
+.new-text3 {
+    position: absolute;
+    top: calc(1371px + 414px + 80px); /* Calculate the top position based on the image's top position + image height + 80px */
+    left: 525.5px; /* Set the left position */
+    width: 389px; /* Set the width */
+    height: 33px; /* Set the height */
+    font-family: Poppins, sans-serif; /* Set font family */
+    font-weight: 600; /* Set font weight */
+    font-size: 27px; /* Set font size */
+    line-height: 33px; /* Set line height */
+    letter-spacing: 0.4px; /* Set letter spacing */
+    color: #6B3CC9; /* Set text color */
+}
+
+
+/* Collapsible Section Styles */
+.collapsible {
+    position: absolute;
+    top: 1930px; /* Adjust as needed */
+    left: 152px; /* Adjust as needed */
+    width: 1136px; /* Fill */
+    height: auto; /* Hug */
+    border-radius: 7px;
+    background-color: #FAF8FF;
+    padding: 24px;
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+.collapsible-header {
+    position: relative; /* Ensure relative positioning for the pseudo-element */
+    width: 1100px; /* Width before expansion */
+    height: 28px; /* Height before expansion */
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #6B3CC9;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.collapsible-header::after {
+    content: "+"; /* Plus mark by default */
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.collapsible-content {
+    width: 848px; /* Width after expansion */
+    height: auto; /* Height after expansion */
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #6F6C90;
+    display: none;
+    padding: 20px;
+}
+
+.collapsible-content.collapsed + .collapsible-header::after {
+    content: "-"; /* Minus mark when content is expanded */
+}
+
+.collapsible-content.collapsed {
+    display: block;
+}
+
+/* Second Collapsible Section */
+#collapsibleSection2.collapsible {
+    Position:;
+    top: 1930px;
+    margin-top: 200px;
+}
+
+/* Third Collapsible Section */
+#collapsibleSection3.collapsible {
+    top: 1830px;
+    margin-top: 200px;
+}
+
+.footer {
+    background-color: #6B3CC9;
+    color: white;
+    height: 266px;
+    width: 1440px;
+    position: absolute;
+    top: 2300px;
+    bottom: 0;
+}
+
+.new-text4 {
+    position: absolute;
+    top: 85px; /* Adjusted top position */
+    left: 80px; /* Adjusted left position */
+    width: 413px; /* Set the width */
+    height: 57px; /* Set the height */
+    font-family: Lato, sans-serif; /* Set font family */
+    font-weight: 400; /* Set font weight */
+    font-size: 16px; /* Set font size */
+    line-height: 19.2px; /* Set line height */
+    color: #FFFFFF; /* Set text color */
+}
+
+.new-text5 {
+    position: absolute;
+    top: 40px; /* Adjusted top position */
+    left: 838px; /* Adjusted left position */
+    width: 179px; /* Set the width */
+    height: 25px; /* Set the height */
+    font-family: Inter, sans-serif; /* Set font family */
+    font-weight: 600; /* Set font weight */
+    font-size: 21px; /* Set font size */
+    line-height: 25.41px; /* Set line height */
+    color: #FFFFFF; /* Set text color */
+}
+
+.new-text6 {
+    position: absolute;
+    top: 40px; /* Adjusted top position */
+    left: 1163px; /* Adjusted left position */
+    width: 179px; /* Set the width */
+    height: 25px; /* Set the height */
+    font-family: Inter, sans-serif; /* Set font family */
+    font-weight: 600; /* Set font weight */
+    font-size: 21px; /* Set font size */
+    line-height: 25.41px; /* Set line height */
+    color: #FFFFFF; /* Set text color */
+}
+
+.new-text7 {
+    position: absolute;
+    top: 77px; /* Adjusted top position */
+    left: 838px; /* Adjusted left position */
+    font-family: Inter, sans-serif; /* Set font family */
+    font-weight: 500; /* Set font weight */
+    font-size: 14px; /* Set font size */
+    line-height: 14px; /* Set line height */
+    color: #FFFFFF; /* Set text color */
+}
+
+.new-text7 br {
+    margin-top: 6px; /* Set the gap between words */
+}
+
+.new-text8 {
+    position: absolute;
+    Width: 197px;
+    top: 77px; /* Adjusted top position */
+    left: 1163px; /* Adjusted left position */
+    font-family: Inter, sans-serif; /* Set font family */
+    font-weight: 500; /* Set font weight */
+    font-size: 14px; /* Set font size */
+    line-height: 14px; /* Set line height */
+    color: #FFFFFF; /* Set text color */
+}
+
+.new-text8 br {
+    margin-top: 6px; /* Set the gap between words */
+}
+
+.white-line {
+    position: absolute;
+    top: 221px; /* Adjusted top position */
+    left: 50%; /* Center alignment */
+    transform: translateX(-50%); /* Center alignment */
+    width: 630px; /* Set the width */
+    height: 1px; /* Set the height */
+    border: 1px solid #FFFFFF; /* Set the border */
+}
+
+.new-text9 {
+    position: absolute;
+    top: 227px; /* Adjusted top position */
+    left: 50%; /* Center alignment */
+    transform: translateX(-50%); /* Center alignment */
+    font-family: Inter, sans-serif; /* Set font family */
+    font-weight: 500; /* Set font weight */
+    font-size: 14px; /* Set font size */
+    line-height: 16.94px; /* Set line height */
+    color: #FFFFFF; /* Set text color */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    header img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        margin-right: 20px;
+    }
+
+    .box,
+    .button {
+        position: relative;
+        margin: 20px auto;
+        left: auto;
+        top: auto;
+    }
+
+    .image img {
+        top: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .custom-text,
+    .second-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+        text-align: center;
+    }
+
+    .new-button {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Hamburger menu icon styles */
+.hamburger-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Hamburger icon styles */
+.hamburger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 6px 0;
+}
+
+/* White panel styles */
+.white-panel {
+    display: none;
+}
+/* CSS for the white panel */
+.white-panel.open {
+    display: block;
+    position: absolute;
+    top: 60px; /* Adjust this value to position the panel below the header */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.white-panel a {
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #100C08;
+    text-decoration: none;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 375px) {
+    /* Hide navigation menu */
+    nav {
+        display: none;
+    }
+
+    /* Show hamburger menu */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Hamburger icon styles for open menu */
+    .hamburger-menu.open .hamburger-icon:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-menu.open .hamburger-icon:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.open .hamburger-icon:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Show white panel */
+    .white-panel {
+        display: block;
+    }
+}
+
